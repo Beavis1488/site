@@ -1,23 +1,27 @@
 body {
   font-size: 16px;
   color: #000;
-  background-color: #eecec6;
+  background-color: #fff;
   font-family: 'arial', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #fff;
+  background-color: #eecec6;
   border-radius: 0;
   border: 0;
 }
-
+.container {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
 .navbar-brand {
   padding-top: 25px;
 }
 h1 { /* Restaurant name */
   font-family: 'Lobster', cursive;
-  color: #eecec6;
+  color: #fff;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
@@ -53,7 +57,7 @@ h1 { /* Restaurant name */
   margin-top: 10px;
 }
 #nav-list a {
-  color: #eecec6;
+  color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   text-align: center;
@@ -149,6 +153,14 @@ h1 { /* Restaurant name */
   color: #fff;
   opacity: .8;
 }
+.gallery_img {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 2px solid #3F0C1F;
+	box-shadow: 0 1px 5px 1px #cccccc;
+	border-radius: 6px;
+}
 /* END HOME PAGE */
 
 /* MENU CATEGORIES PAGE */
@@ -159,6 +171,24 @@ h1 { /* Restaurant name */
   width: 200px;
   height: 200px;
   margin: 0 auto 15px;
+}
+.review-item {
+	font-style: italic;
+	font-size: 1.3em;
+}
+h3 a:hover {
+	text-decoration: underline;
+	color: #000;
+
+}
+.group-ref {
+	color: #000;
+	text-decoration: underline;
+}
+.review-author {
+	text-align: right;
+	font-weight: bold;
+	margin-top: 10px;
 }
 .category-tile span {
   position: absolute;
@@ -248,7 +278,7 @@ h3.menu-item-title {
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container1 .jumbotron1 {
-    background: url('../images/jumbotron_15203.jpg') no-repeat;
+    background: url('../images/jumbotron_12003.jpg') no-repeat;
     background-size: cover;
     height: 721px;
   }
@@ -262,9 +292,9 @@ h3.menu-item-title {
 
   /* Home Page */
   .container1 .jumbotron1 {
-    background: url('../images/jumbotron_12003.jpg') no-repeat;
+    background: url('../images/jumbotron_9923.jpg') no-repeat;
     background-size: cover;
-    height: 558px;
+    height: 721px;
   }
   /* End Home Page */
 }
@@ -275,7 +305,7 @@ h3.menu-item-title {
   .container1 .jumbotron1 {
     background: url('../images/jumbotron_9923.jpg') no-repeat;
     background-size: cover;
-    height: 432px;
+    height: 721px;
   }
   /* End Home Page */
 }
@@ -285,7 +315,7 @@ h3.menu-item-title {
   /* Header */
     .container1 .jumbotron1 {
     background: url('../images/jumbotron_7683.jpg') no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 432px;
   }
   .navbar-brand {
@@ -336,7 +366,7 @@ h3.menu-item-title {
   /* End Footer */
 
   /* Home Page */
-  .container .jumbotron {
+  .container1 .jumbotron1 {
     margin-top: 30px;
     padding: 0;
   }
@@ -357,10 +387,11 @@ h3.menu-item-title {
 }
 
 
+
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Header */
-  .navbar-brand h1 { /* Restaurant name */
+  .brand h1 { /* Restaurant name */
     padding-top: 5px;
     font-size: 6vw;
   }
