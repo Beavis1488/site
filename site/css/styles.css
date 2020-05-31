@@ -1,15 +1,16 @@
 body {
   font-size: 16px;
   color: #000;
-  background-color: #fff;
+  background-color: #eecec6;
   font-family: 'arial', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #eecec6;
+  background-color: #000;
   border-radius: 0;
   border: 0;
+  opacity: .7;
 }
 .container {
 	margin-left: 0;
@@ -20,7 +21,7 @@ body {
   padding-top: 25px;
 }
 h1 { /* Restaurant name */
-  font-family: 'Lobster', cursive;
+  font-family: 'Marck Script', cursive;
   color: #fff;
   font-size: 3em;
   text-transform: uppercase;
@@ -79,7 +80,7 @@ h1 { /* Restaurant name */
 
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid #000;
 }
 .navbar-header button.navbar-toggle {
     margin-top: 15px;
@@ -101,6 +102,7 @@ h1 { /* Restaurant name */
   background-color: #222;
   border-top: 0;
   color: #fff;
+  text-align: center;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
@@ -116,12 +118,24 @@ h1 { /* Restaurant name */
   font-size: .8em;
   line-height: 1.8;
 }
-#testimonials {
-  font-style: italic;
-}
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+.footer-nav-head {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+.footer-nav {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+}
+a:hover .footer-nav{
+	text-decoration: underline;
+	color: #fff;
+	
+}
+
 /* END FOOTER */
 
 
@@ -172,6 +186,10 @@ h1 { /* Restaurant name */
   height: 200px;
   margin: 0 auto 15px;
 }
+.gallery-head {
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
 .review-item {
 	font-style: italic;
 	font-size: 1.3em;
@@ -189,6 +207,7 @@ h3 a:hover {
 	text-align: right;
 	font-weight: bold;
 	margin-top: 10px;
+	padding-right: 10px;
 }
 .category-tile span {
   position: absolute;
@@ -211,6 +230,9 @@ h3 a:hover {
 }
 #menu-categories-title {
   margin-bottom: 50px;
+}
+.more-photo {
+	font-size: 1.2em;
 }
 /* END MENU CATEGORIES PAGE */
 
@@ -252,6 +274,9 @@ h3 a:hover {
   background-color: #557c3e;
   text-align: center;
 }
+.menu-item-tile hr {
+    border-top: 1px solid #9f9898;
+}
 .menu-item-description {
   padding-right: 30px;
 }
@@ -269,8 +294,8 @@ h3.menu-item-title {
   align-items: flex-start;
 }
 .row {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 /* END SINGLE CATEGORY PAGE */
 
@@ -347,7 +372,7 @@ h3.menu-item-title {
     left: 5%;
     border: 2px solid #fff;
     background-color: #eecec6;
-    color: #951c49;
+    color: #000;
   }
   /* End Header */
 
@@ -367,8 +392,7 @@ h3.menu-item-title {
 
   /* Home Page */
   .container1 .jumbotron1 {
-    margin-top: 30px;
-    padding: 0;
+        padding: 0;
   }
   #menu-tile, #specials-tile {
     width: 360px;
